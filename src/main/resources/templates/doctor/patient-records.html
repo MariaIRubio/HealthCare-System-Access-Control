@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Records</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <style>
+        .container{
+            margin: 0 auto;
+            /*width: 900px;*/
+            display: block;
+            justify-content: center;
+        }
+        button{margin-bottom: 5px;}
+        input{width: 50px;}
+        header{padding: 20px; justify-content: space-around}
+        a {text-decoration: none}
+        .container a {
+            text-decoration: none;
+            background: #0172AD;
+            color: white;
+            padding: 14px 18px;
+            border-radius: 5px;
+            line-height: 40px;
+            display: inline-block;
+            margin-right: 50px}
+
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a th:href="@{/}"> Home</a> |
+        <a th:href="@{/doctor}"> Back</a> |
+        <form action="#" th:action="@{/logout}" method="POST">
+            <button>Logout</button>
+        </form>
+    </nav>
+</header>
+<div class="container">
+    <h2>Patients Records</h2>
+    <p>Here you can look for the record of the patients</p>
+
+</div>
+</body>
+</html>

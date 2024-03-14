@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Unauthorized</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <style>
+        .container{
+
+            margin: 0 auto;
+            width: 900px;
+            display: block;
+            justify-content: center;
+        }
+        button{margin-bottom: 5px;}
+        input{width: 50px;}
+        header{padding: 20px; justify-content: space-around}
+
+        a {
+        text-decoration: none;
+        background: #0172AD;
+        color: white;
+        padding: 14px 18px;
+        border-radius: 5px;
+        line-height: 40px;
+        display: inline-block;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Access not authorized</h2>
+    <h3>You can not access this page with your profile</h3>
+
+    <a th:href="@{/}"> Home </a>
+</div>
+</body>
+</html>
